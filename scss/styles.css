@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*text primary*/
+/*background*/
+/*text neutral*/
+/*dividers*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1.5625rem;
+  background: url("./../images/bg-pattern-mobile.svg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+.card .desktop-1, .card .desktop-2 {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: url("./../images/bg-pattern-desktop.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: -450px -230px;
+    padding: 3.75rem 6.25rem 0 0;
+  }
+  .card .desktop-1, .card .desktop-2 {
+    display: block;
+    position: absolute;
+  }
+  .card .desktop-1 {
+    top: 6px;
+    left: -60px;
+    width: 95%;
+  }
+  .card .desktop-2 {
+    top: 155px;
+    left: -93px;
+  }
+  .card .mobile {
+    display: none;
+  }
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image .mobile {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  -webkit-transform: translate(-55%, -70%);
+          transform: translate(-55%, -70%);
+  max-width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .card__image {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 25rem;
+    overflow: hidden;
+  }
+}
+
+.card__content {
+  width: 17.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .card__content {
+    width: 21.875rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-bottom: 4.375rem;
+  }
+}
+
+.card__content .faq {
+  padding: 6.25rem 0 0.9375rem 0;
+  text-align: center;
+  font-size: 1.8125rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  .card__content .faq {
+    padding: 0 0 0.9375rem 0;
+    text-align: left;
+  }
+}
+
+.card__content input {
+  display: none;
+}
+
+.card__content section {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.card__content .content {
+  display: none;
+  padding: 0 1.75rem 1rem 0;
+  color: #787887;
+  line-height: 1.4;
+}
+
+.card__content img {
+  -webkit-transition: -webkit-transform ease-in-out 200ms;
+  transition: -webkit-transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms, -webkit-transform ease-in-out 200ms;
+}
+
+.card__content input:checked + label {
+  font-weight: 700;
+  padding-bottom: 0.875rem;
+}
+
+.card__content input:checked + label img {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.card__content input:checked + label + div.content {
+  display: block;
+}
+
+.card__content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8125rem;
+  padding: 1rem 0;
+  color: #4a4b5e;
+}
+
+.card__content label span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card__content label:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

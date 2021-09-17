@@ -1,0 +1,23 @@
+@function rem($sz){
+    @return $sz/16+rem;
+}
+
+/*text primary*/
+$veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+
+/*background*/
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+
+/*text neutral*/
+$veryDarkGrayishBlue: hsl(237, 12%, 33%);
+$darkGrayishBlue: hsl(240, 6%, 50%);
+
+/*dividers*/
+$lightGrayishBlue: hsl(240, 5%, 91%);
+
+$defaultFamily: 'Kumbh Sans', sans-serif;
+$normal: 400;
+$bold: 700;
+$szDefault: rem(12);

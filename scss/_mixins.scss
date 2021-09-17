@@ -1,0 +1,6 @@
+$sizes: ('mobile': 900px);
+@mixin breakpoint-up($sz) {
+    @media screen and (min-width: map-get($map: $sizes, $key: $sz)) {
+        @content
+    }
+}
