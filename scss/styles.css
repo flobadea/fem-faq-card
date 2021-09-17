@@ -65,8 +65,7 @@ body {
     background: url("./../images/bg-pattern-desktop.svg");
     background-color: white;
     background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: -450px -230px;
+    background-position: -650px -300px;
     padding: 3.75rem 6.25rem 0 0;
   }
   .card .desktop-1, .card .desktop-2 {
